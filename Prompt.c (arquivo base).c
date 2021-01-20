@@ -122,6 +122,10 @@ void last(ListaNo* n)
 	printf("%d \n", n->last->valor);
 }
 
+void quicksort()
+{
+}
+
 int main(int argc, char *argv[]) {
 	char input[201];
 	int valor;
@@ -164,6 +168,8 @@ int main(int argc, char *argv[]) {
 			first(minhaLista);
 		if (strncmp(input, "last", 4) == 0)
 			last(minhaLista);
+		if (strncmp(input, "sort", 4) == 0)
+			quicksort(minhaLista);
 
 		print_entry(input);
 	}
